@@ -1,0 +1,13 @@
+services:
+  redis:
+    image: redis:7.4-alpine
+    container_name: faultcrawler-redis
+    command: redis-server --appendonly yes
+    ports:
+      - "6379:6379"
+    volumes:
+      - crawler-redis:/data
+
+volumes:
+  crawler-redis:
+
