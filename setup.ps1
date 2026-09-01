@@ -9,5 +9,4 @@ if (-not (Test-Path -LiteralPath $python)) {
 
 & $python -m pip install --upgrade pip
 & $python -m pip install -e "$projectRoot[test]"
-& $python -c "import redis; print('Crawler foundation dependencies installed')"
-
+& $python -c "import aiohttp, protego, redis; print('Python crawler dependencies installed')"
