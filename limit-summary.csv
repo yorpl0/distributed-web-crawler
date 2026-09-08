@@ -1,0 +1,7 @@
+"mode","processes","async_tasks","trials","median_pages_per_second","mean_pages_per_second","stddev_pages_per_second","min_pages_per_second","max_pages_per_second","mean_peak_crawler_mb","max_p95_fetch_ms","http_2xx_percent","processing_after_run"
+"politeness","8","32","3","29.18","29.21","0.07","29.15","29.29","451.91","1","100","0"
+"saturation","1","4","3","404.98","359.52","79.67","267.52","406.05","56.84","4","100","0"
+"saturation","2","8","3","611.5","550.12","107.19","426.35","612.52","113.8","4","100","0"
+"saturation","4","16","3","757.78","719.99","74.2","634.5","767.69","227.25","5","100","0"
+"saturation","8","32","3","720.01","719.65","12.42","707.05","731.88","453.88","8","100","0"
+

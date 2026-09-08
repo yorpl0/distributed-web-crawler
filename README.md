@@ -68,10 +68,12 @@ Redis heartbeat.
 
 ## Measured performance
 
-The saturation benchmark used Python 3.13.1, Docker Redis 7.4, a deterministic
+The recorded saturation benchmark used Python 3.13.1, Docker Redis 7.4, a deterministic
 local zero-latency HTTP fixture, 5,000 fetched pages per trial, 32 links per page,
 four async tasks per process, and three trials per configuration. Timings include
-process startup.
+process startup. It predates the strict shared page-cap fix, so the raw CSV shows
+small in-flight overshoots; the current frontier enforces the cap atomically and
+has a dedicated integration test.
 
 | Processes | Async tasks | Median pages/s | Speedup | Mean peak RAM |
 |---:|---:|---:|---:|---:|
@@ -115,4 +117,3 @@ project's interview-sized scope.
 
 Python 3.11+ · asyncio · aiohttp · Redis · Lua · Protego · Docker Compose ·
 Pytest · PowerShell
-

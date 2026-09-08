@@ -1,0 +1,5 @@
+recovered=true
+attempts=1
+killed_worker=doomed
+completing_worker=survivor
+
